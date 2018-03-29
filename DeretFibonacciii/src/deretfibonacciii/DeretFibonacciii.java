@@ -20,6 +20,16 @@ public class DeretFibonacciii {
         // TODO code application logic here
         Scanner show = new Scanner(System.in);
         System.out.print("Input : ");
+          int angkaPertama = 0;
+          int angkaKedua = 1;
+        
+        for(int i=0;i<limit-2;i++){
+            fibonacci=current+pass;
+            pass=current;
+            current=fibonacci;
+            
+            list.add(fibonacci);
+        
         int n = show.nextInt();
         long fib[] = new long[n];
          
